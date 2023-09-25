@@ -15,14 +15,21 @@ shell:
 3. Install [direnv](https://direnv.net/).
 4. Create a `.envrc` file to enable the development shell:
 
-    echo "use flakes" > .envrc
+  ```sh
+  echo "use flakes" > .envrc
+  ```
+
 
 5. run: `direnv allow` in the project directory.
 6. Build the project:
 
-    nix build
+  ```sh
+  nix build
+  ```
 
-7. Run the built program:
+7. Run the built program, should be on path at `./result/bin/fasm-hello`:
 
-    ./result/bin/fasm-hello
+  ```sh
+  fasm-hello
+  ```
 
