@@ -13,12 +13,16 @@ shell:
   [Determinate Installer](https://github.com/DeterminateSystems/nix-installer#the-determinate-nix-installer).
 2. Configure Nix to use [Flakes](https://nixos.wiki/wiki/Flakes).  _(default config if using the Determinate Installer)_
 3. Install [direnv](https://direnv.net/).
-4. run: `direnv allow` in the project directory.
-5. Build the project:
+4. Create a `.envrc` file to enable the development shell:
+
+    echo "use flakes" > .envrc
+
+5. run: `direnv allow` in the project directory.
+6. Build the project:
 
     nix build
 
-6. Run the built program:
+7. Run the built program:
 
     ./result/bin/fasm-hello
 
