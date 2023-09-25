@@ -34,3 +34,7 @@ shell:
   ```sh
   fasm-hello
   ```
+
+## More Examples
+
+You can find more flat assembler examples at their [website here](https://flatassembler.net/examples.php).
