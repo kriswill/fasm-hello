@@ -1,8 +1,6 @@
-# Flat Assembler Hello World example
+# Flat Assembler "Hello World" example
 
-This example shows how to write a simple "Hello, World!" example using
-Flat Assembler.  I made this simple example so that I could learn this
-compiler, and create a Nix derivation to compile and run it.
+A Simple "Hello, World!" example using [Flat Assembler](https://flatassembler.net/).
 
 ## Setup
 
@@ -19,8 +17,12 @@ shell:
   echo "use flakes" > .envrc
   ```
 
+5. enable direnv:
 
-5. run: `direnv allow` in the project directory.
+  ```sh
+  direnv allow
+  ```
+
 6. Build the project:
 
   ```sh
@@ -32,4 +34,3 @@ shell:
   ```sh
   fasm-hello
   ```
-
