@@ -1,4 +1,4 @@
-# Flat Assembler "Hello World" example
+# Flat Assembler "Hello World" example, in x86_64 Linux
 
 A Simple "Hello, World!" example using [Flat Assembler](https://flatassembler.net/).
 
