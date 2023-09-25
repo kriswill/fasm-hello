@@ -12,12 +12,18 @@
         program-name = "fasm-hello";
       in
       {
+        # nix develop, or automatically when using direnv
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [
             fasm
           ];
+          shellHook = ''
+            export PATH=$(realpath ./result/bin):$PATH
+          '';
         };
 
+        # nix build
+        # creates binary in ./result/bin/fasm-hello
         packages.default = pkgs.stdenvNoCC.mkDerivation {
           name = "${program-name}";
           version = "0.1.0";
