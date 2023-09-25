@@ -45,7 +45,7 @@
           '';
 
           meta = {
-            description = "A simple Hello World program in Flat Assember (fasm) for Linux";
+            description = "A simple Hello World program in Flat Assembler (fasm) for Linux";
             license = pkgs.lib.licenses.mit;
           };
         };
