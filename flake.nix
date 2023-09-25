@@ -33,8 +33,6 @@
           buildInputs = with pkgs; [ fasm ];
 
           buildPhase = ''
-            pwd
-            ls -la
             ${pkgs.fasm}/bin/fasm ${program-name}.asm ${program-name}
           '';
 
