@@ -14,7 +14,7 @@ shell:
 4. Create a `.envrc` file to enable the development shell:
 
   ```sh
-  echo "use flakes" > .envrc
+  echo "use flake" > .envrc
   ```
 
 5. enable direnv:
